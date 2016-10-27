@@ -1,0 +1,48 @@
+.feature-list {
+  margin: 16px 0;
+}
+
+.feature-list__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list__name {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+
+.feature-list--2 .feature-list__items {
+  columns: 2;
+}
+
+.feature-list--3 .feature-list__items {
+  columns: 3;
+}
+
+.feature-list--4 .feature-list__items {
+  columns: 4;
+}
+
+.feature-list__item {
+  font-size: 13px;
+  position: relative;
+  padding: 0 0 0 16px;
+  margin-bottom: 10px;
+  padding-left: 46px;
+  break-inside: avoid;
+  margin-bottom: 30px;
+  padding-right: 10px;
+  min-height: 80px;
+}
+
+.feature-list__icon {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size: 30px !important;
+}
