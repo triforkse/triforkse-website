@@ -5,33 +5,26 @@ import PhotoGrid from './PhotoGrid';
 import Comment from './Comment';
 import List from './List';
 import FeatureList from './FeatureList';
+import HumioSplash from '../splashes/HumioSplash';
+import ScrumSplash from '../splashes/ScrumSplash';
 import './HomePage.css';
 import BEM from '../BEM';
 
 const page = BEM("home-page");
-const splash = BEM("splash");
 const section = BEM("section");
 
 export default class HomePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {splash: (Math.random() > 0.5) ? <ScrumSplash /> : <HumioSplash />};
+  }
+
   render() {
     return (
       <div {...page()}>
         <div {...page("splash")}>
           <Navbar transparent={true} />
-          <div {...splash()}>
-            <div {...splash("demo")}>
-              <img alt="" src={require("../images/logos/humio_logo.svg")} />
-              <div {...splash("line-shadow")}></div>
-            </div>
-            <div {...splash("line")}></div>
-            <div {...splash("content")}>
-              <h1 {...splash("title")}>LOG AGGREGATION & DATA MANAGEMENT</h1>
-              <div {...splash("description")}>
-                Use your data as a strategic asset, get real-time insight
-                into your business.
-              </div>
-            </div>
-          </div>
+          {this.state.splash}
         </div>
 
         <div {...page("content")}>

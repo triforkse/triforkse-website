@@ -203,3 +203,17 @@
   max-width: 1100px;
   display: flex;
 }
+
+.splash__call-to-action {
+  padding: 7px 15px;
+  background-color: rgb(48, 175, 121);
+  border-radius: 2px;
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: none;
+  border: solid 1px rgb(48, 175, 121);
+}

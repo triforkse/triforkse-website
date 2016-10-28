@@ -1,14 +1,5 @@
 import Blog from "../common/Blog";
 
-export default {
-  get(category = Blog.Category.ALL, since = null) {
-    return new Promise((resolve, reject) => {
-      const result = hardCodedPosts.filter(p => category === Blog.Category.ALL || p.category.toUpperCase() === category);
-      setTimeout(() => resolve(result), 300);
-    });
-  }
-};
-
 const hardCodedPosts = [
   {
     id: "post1",
@@ -37,3 +28,12 @@ const hardCodedPosts = [
     `
   }
 ];
+
+export default {
+  get(category = Blog.Category.ALL, since = null) {
+    return new Promise((resolve, reject) => {
+      const result = hardCodedPosts.filter(p => category === Blog.Category.ALL || p.category.toUpperCase() === category);
+      resolve(result);
+    });
+  }
+};
