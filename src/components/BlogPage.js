@@ -22,7 +22,7 @@ export default class BlogPage extends Component {
     this.state = {
       status: STATUS.LOADING,
       posts: null,
-      category: Blog.paramToCategory(props.params.category)
+      category: Blog.paramToCategory(props.params !== undefined ? props.params.category : undefined)
     };
 
     BlogClient.get(this.state.category)
