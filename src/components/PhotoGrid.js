@@ -4,6 +4,8 @@ import './PhotoGrid.css';
 
 export default (props) => (
   <div className="photo-grid">
-    {props.photos.map(img => (<div className="photo-grid__photo" style={{backgroundImage: `url(${img})`}}></div>))}
+    {props.photos.map((img, i) => (
+      <div key={i} className="photo-grid__photo" style={{backgroundImage: `url(${img})`}}></div>
+    ))}
   </div>
 )
