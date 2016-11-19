@@ -2,7 +2,7 @@
   "name": "triforkse",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://triforkse.github.io/website",
+  "homepage": "http://triforkse.github.io/",
   "devDependencies": {
     "react-scripts": "0.6.1"
   },
