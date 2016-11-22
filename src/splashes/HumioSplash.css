@@ -1,0 +1,29 @@
+.splash-humio {
+  display: flex;
+  flex-direction: column;
+}
+
+.splash-humio__charts {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  min-width: 320px;
+}
+
+.splash-humio__chart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1 120px;
+}
+
+.splash-humio__chart-title {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.splash-humio__chart-timespan {
+  font-size: 10px;
+  text-align: center;
+}

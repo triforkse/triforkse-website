@@ -8,9 +8,11 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "d3": "^4.3.0",
     "google-maps": "^3.2.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-faux-dom": "^3.0.0",
     "react-router": "^2.8.1"
   },
   "scripts": {
