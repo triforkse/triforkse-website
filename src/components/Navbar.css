@@ -1,6 +1,6 @@
 .navbar {
   height: 60px;
-  background-color: #212121;
+  background-color: rgb(0, 183, 170);
   width: 100%;
 }
 
@@ -15,6 +15,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding: 0 30px;
 }
 
 .navbar__logo {
