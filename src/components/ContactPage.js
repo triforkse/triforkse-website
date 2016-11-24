@@ -269,33 +269,26 @@ export default class ContactPage extends Component {
   }
 
   renderVCard(vcard) {
-    return vcard.map(item => (
-      <div key={item.key} className={"contact-page__vcard-" + item.key}>
-        <span className="contact-page__vcard-field">{item.field}</span>
-        {item.value}
+    return (
+      <div className="contact-page__vcard">
+        { vcard.map(item => (
+          <div key={item.key} className={"contact-page__vcard-row " + item.key}>
+            <span className="contact-page__vcard-field">{item.field}</span>
+            {item.value}
+          </div>
+        )) }
       </div>
-    ));
+    );
   }
 
   render() {
     return (
       <div>
         <Navbar />
-        <div className="contact-page__map">
-          <div className="contact-page__worldmap" ref="worldmap"></div>
-          <div className="contact-page__map-label">
-            <div className="contact-page__map-title">20 Offices in 9 Countries</div>
-            <p>The Swedish Trifork Office is one of many Trifork.</p>
-            <p>If you are looking for one of our other offices, head over to our&nbsp;
-            <a href="//trifork.com/offices/">Global Website.</a></p>
-          </div>
-        </div>
-        <div className="contact-page__segment">
-          <h1 className="contact-page__segment-heading">Contact Trifork Stockholm</h1>
-          <div className="contact-page__inset">
-            <div className="contact-page__vcard">{ this.renderVCard(vcardTrifork) }</div>
-            <div className="contact-page__vcard">{ this.renderVCard(vcardThomas) }</div>
-          </div>
+        <div className="contact-page__worldmap" ref="worldmap"></div>
+        <div className="contact-page__vcards">
+            { this.renderVCard(vcardTrifork) }
+            { this.renderVCard(vcardThomas) }
         </div>
         <PageFooter />
       </div>

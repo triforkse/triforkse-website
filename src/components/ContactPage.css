@@ -1,84 +1,39 @@
-/* ported from segment.styl */
-
-.contact-page__segment {
-  padding: 90px 10px;
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-page__segment-heading {
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.contact-page__inset {
-  width: 900px;
-  margin: 90px auto 0;
-}
-
-/* ported from map.styl */
-
 .contact-page__worldmap {
   width: 100%;
-  height: 400px;
-  position: relative;
-  background-color: black;
-}
-
-/*.map--large,
-.map--large #map,
-.map--large #worldMap
-  height: 600px*/
-
-.contact-page__map-label {
-  width: 400px;
-  line-height: 1.5;
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  background-color: white;
-  padding: 30px;
-}
-
-.contact-page__map-label {
-  top: auto;
-  right: 100px;
-  bottom: 100px;
-  left: auto;
+  height: 475px;
 }
 
 .contact-page__map-title {
   font-size: 1.8rem;
 }
 
-/* ported from vcard.styl */
+.contact-page__vcards {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
 
 .contact-page__vcard {
-  max-width: 600px;
-  text-align: left;
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 48%;
-  margin: 0 1%;
+  width: 400px;
+  margin: 50px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  border-radius: 2px;
+  padding: 15px 50px 30px;
+  background-color: white;
 }
 
-/*@media screen and (max-width: screen-xs-max) {
-  column-count: 12;
-  margin-bottom: "space-unit"
-}*/
-
-.contact-page__vcard > div:not(:last-child) {
-  margin-bottom: 10px;
+.contact-page__vcard-row {
+  margin: 10px;
 }
 
-.contact-page__vcard-name {
-  font-size: 30px;
+.contact-page__vcard-row.name {
+  font-weight: 300;
+  font-size: 2.5rem;
 }
 
 .contact-page__vcard-field {
-  width: 100px;
+  width: 90px;
   display: inline-block;
   color: gray;
+  font-weight: 300;
 }
