@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router'
 import HomePage from './components/HomePage';
-import TeamPage from './components/TeamPage';
+import TeamPage from './components/TeamPage/TeamPage';
 import ContactPage from './components/ContactPage';
 import BlogPage from './components/BlogPage';
 import MobilePayArticle from './articles/MobilePayArticle';
 import NotFoundPage from './components/NotFoundPage';
 import './index.css';
+import './lib/flexboxgrid.min.css';
 
 const router = (
   <Router history={browserHistory}>

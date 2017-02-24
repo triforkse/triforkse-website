@@ -117,3 +117,24 @@ body, #root, #root > div {
   color: rgb(223, 99, 20);
   border: solid 1px rgb(223, 99, 20);
 }
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-top {
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  /* overflow is set to prevent margin collapse */
+  overflow: hidden;
+}
+
+.page-top__text {
+  background-color: rgba(0,0,0,0.6);
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 700px;
+}

@@ -87,7 +87,7 @@ export default React.createClass({
           </div>
           <div>
             <a href="#" {...splash("call-to-action")}>Read More</a>
-            <a href="#" {...splash("call-to-action")}>Free 1GB Trial</a>
+            <a href="https://go.humio.com/" {...splash("call-to-action")}>Free 60GB Trial</a>
           </div>
         </div>
       </div>
