@@ -1,3 +1,43 @@
 #team-page .page-top {
   background-image: url('./bg.jpg');
 }
+
+.teamtailor-jobs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.teamtailor-jobs__job {
+  position: relative;
+  border: 1px solid #D6DADD;
+  border-radius: 3px;
+  margin: 0 0 10px;
+  background-image: linear-gradient(to top,#F1F3F2,#F9F9F9);
+  display: flex;
+  align-items: center;
+}
+
+.teamtailor-jobs__job > a {
+  text-decoration: none;
+  padding: 7px 10px;
+  display: block;
+  width: 100%;
+}
+
+.teamtailor-jobs__job:hover {
+  background-image: linear-gradient(to bottom,#E1E3E2,#E9E9E9);
+}
+
+.teamtailor-jobs__job-title {
+  font-size: 16px;
+  color: #000;
+}
+
+.teamtailor-jobs__job-info {
+  display: none;
+}
+
+.section__content p {
+  margin-top: 0;
+}
