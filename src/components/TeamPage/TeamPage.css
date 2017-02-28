@@ -32,12 +32,30 @@
 .teamtailor-jobs__job-title {
   font-size: 16px;
   color: #000;
+  position: relative;
+  padding-left: 40px !important;
+  display: block;
 }
 
 .teamtailor-jobs__job-info {
   display: none;
 }
 
-.section__content p {
-  margin-top: 0;
+.teamtailor-jobs__job-title:before {
+  content: "\f127";
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 16px;
+  top: 10px;
+  color: #3D3D3D;
 }
