@@ -118,10 +118,11 @@ body, #root, #root > div {
   border: solid 1px rgb(223, 99, 20);
 }
 
-.container {
+.trifork-container {
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
+  padding-right: 2rem;
+  padding-left: 2rem
 }
 
 .page-top {
@@ -171,15 +172,15 @@ body, #root, #root > div {
 }
 
 .segment__title {
-  height: 80px;
   padding: 0;
   margin: 0;
   font-size: 30px;
   font-weight: 300;
+  margin-bottom: 20px;
 }
 
 .segment__content--no-header {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 .icon-list {
@@ -205,4 +206,10 @@ body, #root, #root > div {
   max-width: 32px;
   max-height: 32px;
   margin-right: 8px;
+}
+
+@media screen and (max-width: 800px) {
+.col-xs-12 {
+  width: 100%;
+}
 }
