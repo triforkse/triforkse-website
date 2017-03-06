@@ -69,6 +69,10 @@
   justify-content: center;
 }
 
+.splash__demo-sprint-icon {
+  width: 280px;
+}
+
 .splash__content {
   margin-left: 30px;
   width: 400px;

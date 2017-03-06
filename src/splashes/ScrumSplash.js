@@ -7,7 +7,7 @@ const splash = BEM("splash");
 export default () => (
   <div {...splash()}>
     <div {...splash("demo")}>
-      <img alt="" src={require("../images/logos/humio_logo.svg")} />
+      <img {...splash("demo-sprint-icon")} alt="" src={require("../images/graphics/sprint.svg")} />
       <div {...splash("line-shadow")}></div>
     </div>
     <div {...splash("line")}></div>

@@ -4,7 +4,6 @@ import PageFooter from './PageFooter';
 import { default as GoogleMapsLoader } from 'google-maps';
 import './ContactPage.css';
 import pin from '../images/graphics/pin.png';
-import pinSmall from '../images/graphics/pin-small.png';
 
 const vcardTrifork = [
   { key: "name", value: "Trifork AB" },
@@ -18,18 +17,18 @@ const vcardTrifork = [
 const vcardThomas = [
   { key: "name", value: "Thomas Anagrius" },
   { key: "title", field: "Title", value: "VD, Managing Director" },
-  { key: "phone", field: "Phone", value: "+46 70 445 0863" },
+  { key: "phone", field: "Phone", value: "+46 70 445 0863 (No Recruiters)" },
   { key: "email", field: "Email", value: <a href="mailto:thb@trifork.com">thb@trifork.com</a> }
 ];
 
 const mapOptions = {
-  center: {lat: 59.323, lng: 18.03},
-  zoom: 4,
+  center: {lat: 42.323, lng: -42.03},
+  zoom: 3,
   scrollwheel: false,
   navigationControl: false,
   mapTypeControl: false,
   scaleControl: false,
-  draggable: false,
+  draggable: true,
   mapTypeId: "roadmap",
   styles: [
     {
@@ -39,6 +38,20 @@ const mapOptions = {
         {
           "color": "#ffffff"
         }
+      ]
+    },
+    {
+      featureType: "administrative.country",
+      elementType: "labels",
+      stylers: [
+          { visibility: "off" }
+      ]
+    },
+    {
+      featureType: "administrative.state",
+      elementType: "labels",
+      stylers: [
+          { visibility: "off" }
       ]
     },
     {
@@ -230,9 +243,13 @@ const markerData = [
     "long": 19.942219
   },
   {
-    "thisIsUs": true,
     "lat": 59.323125,
     "long": 18.075935
+  },
+  {
+    // Chicago
+    "lat": 41.881832,
+    "long": -87.623177
   },
   {
     "lat": 47.177497,
@@ -263,7 +280,7 @@ export default class ContactPage extends Component {
       markerData.map(data => new google.maps.Marker({
         position: new google.maps.LatLng(data.lat, data.long),
         map: map,
-        icon: (!!data.thisIsUs) ? pin : pinSmall
+        icon: pin
       }));
     });
   }
@@ -285,10 +302,40 @@ export default class ContactPage extends Component {
     return (
       <div>
         <Navbar />
-        <div className="contact-page__worldmap" ref="worldmap"></div>
-        <div className="contact-page__vcards">
-            { this.renderVCard(vcardTrifork) }
-            { this.renderVCard(vcardThomas) }
+        <div className="page-top" id="contact-page__worldmap-container">
+          <div className="contact-page__worldmap" ref="worldmap"></div>
+          <div className="page-top__text">
+            <h2>20 Offices in 9 Countries</h2>
+            <div>
+              The Swedish Trifork Office is one of many.<br/>
+              If you are looking for one of our other offices, head over to
+              our <a href="http://trifork.com/">Global Website</a>.
+            </div>
+          </div>
+        </div>
+        <div className="trifork-container">
+          <div className="row">
+          <div className="col-md-6">
+            <div className="section">
+              <h2 className="section__title">How can we help you?</h2>
+              <p className="description">
+                The first step to building great software building a great relationship.
+                If you're aiming to grow your business, change your industry, or the world. We want to help.
+              </p>
+
+              <h2 className="section__title">Looking for a job?</h2>
+              <p className="description">
+                Check out our <a href="/team">Team Page</a>.
+              </p>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="contact-page__vcards">
+                { this.renderVCard(vcardTrifork) }
+                { this.renderVCard(vcardThomas) }
+            </div>
+          </div>
+          </div>
         </div>
         <PageFooter />
       </div>

@@ -16,7 +16,7 @@ const section = BEM("section");
 export default class HomePage extends Component {
   constructor(props) {
     super(props);
-    this.state = {splash: (Math.random() > 0.5) ? <ScrumSplash /> : <HumioSplash />};
+    this.state = {splash: (Math.random() > -1) ? <ScrumSplash /> : <HumioSplash />};
   }
 
   render() {

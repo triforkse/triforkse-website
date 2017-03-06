@@ -3,7 +3,7 @@ const main = [
   // { title: "Case Studies", href: "/our-work" },
   { title: "Team", href: "/team" },
   { title: "Blog", href: "/blog" },
-  { title: "Let's work together", href: "/contact" }
+  { title: "Contact Us", href: "/contact" }
 ];
 
 export default {

@@ -141,6 +141,11 @@ body, #root, #root > div {
   text-align: center;
   font-size: 20px;
   font-weight: 100;
+  position: relative;
+}
+
+.page-top__text--light .page-top__text {
+  color: white;
 }
 
 .page-top__text h2 {
@@ -148,7 +153,12 @@ body, #root, #root > div {
   font-size: 40px;
   padding: 0;
   margin: 0;
+  margin-bottom: 15px;
   line-height: 1;
+}
+
+.page-top__text a {
+  color: white !important;
 }
 
 .segment {

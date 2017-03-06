@@ -1,6 +1,14 @@
+
+#contact-page__worldmap-container {
+  height: 475px;
+  display: flex;
+  align-items: flex-end;
+}
+
 .contact-page__worldmap {
   width: 100%;
   height: 475px;
+  position: absolute;
 }
 
 .contact-page__map-title {
@@ -9,7 +17,6 @@
 
 .contact-page__vcards {
   font-size: 1.2rem;
-  display: flex;
   justify-content: center;
 }
 
@@ -28,12 +35,14 @@
 
 .contact-page__vcard-row.name {
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .contact-page__vcard-field {
-  width: 90px;
+  width: 70px;
   display: inline-block;
   color: gray;
   font-weight: 300;
+  text-align: right;
+  padding-right: 20px;
 }
