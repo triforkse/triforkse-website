@@ -1,6 +1,7 @@
 import React from 'react';
-import Menu from '../common/Menu';
 import cn from 'classnames';
+import MenuDropDown from './MenuDropDown';
+import Menu from '../common/Menu';
 
 import './Navbar.css';
 
@@ -14,7 +15,12 @@ export default (props) => {
         </a>
 
         <div className="navbar__menu">
-          { Menu.main.map(item => <a key={item.title} className="navbar__menu-item" href={item.href}>{item.title}</a>) }
+          { Menu.main.map(item => (
+            <a key={item.title} className="navbar__menu-item" href={item.href}>
+              {item.title}
+              <MenuDropDown items={item.items} />
+            </a>
+          ))}
         </div>
       </div>
     </div>

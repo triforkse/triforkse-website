@@ -33,6 +33,19 @@
   display: block;
 }
 
+.navbar__menu-item .menu-dd {
+  opacity: 0;
+  transition: all 200ms;
+  top: 20px;
+  z-index: 0;
+}
+
+.navbar__menu-item:hover .menu-dd {
+  opacity: 1;
+  top: 30px;
+  z-index: 1;
+}
+
 .navbar__menu-item::after {
   content: '';
   height: 2px;

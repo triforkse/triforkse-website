@@ -16,7 +16,7 @@ const section = BEM("section");
 export default class HomePage extends Component {
   constructor(props) {
     super(props);
-    this.state = {splash: (Math.random() > -1) ? <ScrumSplash /> : <HumioSplash />};
+    this.state = {splash: (Math.random() > 0.5) ? <ScrumSplash /> : <HumioSplash />};
   }
 
   render() {
@@ -43,7 +43,7 @@ export default class HomePage extends Component {
                   { name: "Log Management", icon: "dehaze", description: "Real-Time Centralized Loggning for BI, Monitorering and Troubleshooting", color: "rgb(0, 198, 168)"},
                   { name: "Mobile & Web Apps", icon: "web", description: "Build state of the art apps coded in React, React Native, Swift, Phoenix, NodeJS and Java", color: "rgb(255, 184, 25)"},
                   { name: "System Design", icon: "devices_other", description: "Build scalable solutions using coded and Java, Elixir, Go and Scala", color: "rgb(0, 168, 72)"},
-                  { name: "IoT & Security", icon: "device_hub", description: "Enable products to transition to IoT, securely and reliably", color: "rgb(189, 0, 0)"},
+                  { name: "Machine Learning", icon: "device_hub", description: "Improve your products by letting an AI analyse your data make smart decisions", color: "rgb(189, 0, 0)"},
                 ]} />
               </div>
             </div>
