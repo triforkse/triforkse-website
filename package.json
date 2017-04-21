@@ -11,6 +11,7 @@
     "contentful": "^4.2.1",
     "d3": "^4.3.0",
     "google-maps": "^3.2.1",
+    "mailgun.js": "^2.0.1",
     "react": "^15.5.4",
     "react-d3": "^0.4.0",
     "react-dom": "^15.5.4",

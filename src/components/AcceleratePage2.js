@@ -17,6 +17,8 @@ export default class AcceleratePage2 extends React.Component {
 
             titleIcon="arrow_forward"
 
+            testimonalTitle="What to Expect"
+
             titleTagline="Explore Business Problems &amp; Validate Ideas is Just 5 Days"
 
             bubbles={[
@@ -26,29 +28,28 @@ export default class AcceleratePage2 extends React.Component {
             ]}
 
             testimonial={{
-              text: "This course will be rocket fuel to the two major project teams who attented. We blast off tomorrow in the office.",
-              name: "Randall",
-              jobTitle: "Developer of General Electric",
-              portraitUrl: `${require("../images/logos/general-electric.svg")}`
+              text: "The process can feel intens and even frustrating at times (Esspecially the first 2 days). But you get quick results! The Trifork Accelerate process has both proven ideas to be worth persuing and dismissed others. Both results are equally valuable for our customers.",
+              name: "Peter Rørsgaard",
+              jobTitle: "VP, Trifork Copenhagen",
+              portraitUrl: `${require("../images/people/pro.jpg")}`
             }}
 
-            featureTitle="How can we help inspire and educate your employees"
-            featureSubtitle="We offer both on-premise or off-site courses"
+            featureTitle="Your company is already full of ideas, you just need to pick the right one"
+            featureSubtitle="We offer both on-premise or off-site workshops"
 
             features={[
-              { icon: "code", color: "red", title: "Languages + Technology", description: "We pride ourselves on supplying course in cutting edge technology and new programming languages as well as certification mainstream tech like Spring Core, Erlang OTP and TTD." },
-              { icon: "dehaze", color: "green", title: "Data + Log Management", description: "The world of IT is becoming data-driven. We help you get the skills and knowledge needed to be prepared to handle large amounts of data and logging from distributed systems." },
-              { icon: "people", color: "purple", title: "Scrum + SAFe", description: "We work with the best agile trainers in the field from across Europe and the US to maintain a high level of quality. With 20 years of experience and our large global network you will be in the best hands with Trifork by your side." },
-              { icon: "share", color: "blue", title: "DevOps + Micro Services", description: "Doing DevOps and Micro Services require both technical expertise and a change of mindset. We do courses like Intro to MicroServices and DevOps Bootcamp to ease your company's transition." },
+              { icon: "people", color: "red", title: "The People", description: "The team is all-important. You need a cross-functional group of people, including Stakeholders, Developers, Designers and External Users." },
+              { icon: "dehaze", color: "green", title: "Artifacts", description: "The excercises that we go through in the process produceses artifacts like Story Boards, User Story Videos, Mock-Ups and Prototypes that are directly usable in a project." },
+              { icon: "school", color: "purple", title: "Expert Facilitator", description: "Having an experienced facilitator that is external to the team helps the team to keep on tack and offers an unpartican and objective view." },
+              { icon: "thumb_up", color: "blue", title: "Success Criteria + Mindset", description: "Success is measured by whether an idea can be VALIDATED OR DISMISSED, not whether it becomes a project in the end. This is the key to the entire process." },
             ]}
 
             brands={[
-              { title: "Spotify", logoURL: require('../images/logos/spotify.svg') },
-              { title: "Skatteverket", logoURL: require('../images/logos/skatteverket.svg') },
-              { title: "Lego", logoURL: require('../images/logos/lego.svg') },
-              { title: "Klarna", logoURL: require('../images/logos/klarna.svg') },
-              { title: "Jysk", logoURL: require('../images/logos/ea.svg') },
-
+              { title: "Sparinvest", logoURL: require('../images/logos/sparinvest.png') },
+              { title: "Alm Brand", logoURL: require('../images/logos/alm_brand.png') },
+              { title: "BankData", logoURL: require('../images/logos/bankdata.png') },
+              {},
+              { title: "Telmore", logoURL: require('../images/logos/telmore.png') },
             ]}
             ></ServicePage>
       );

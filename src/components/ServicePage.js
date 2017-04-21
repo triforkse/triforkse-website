@@ -38,7 +38,7 @@ export default class ServicePage extends React.Component {
 
           <div className="page__content">
             <div className="service-page__testimonial">
-              <Testimonial title="What our clients say" {...this.props.testimonial} />
+              <Testimonial title={this.props.testimonalTitle || "What our clients say"} {...this.props.testimonial} />
 
               <div className="service-page__brand-cloud">
                 <div className="brand-cloud">
