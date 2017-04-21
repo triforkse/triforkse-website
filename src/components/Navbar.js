@@ -6,7 +6,7 @@ import Menu from '../common/Menu';
 import './Navbar.css';
 
 export default (props) => {
-  const image = props.transparent ? "trifork_logo.svg" : "trifork_logo_white.svg";
+  const image = (props.transparent && !props.light) ? "trifork_logo.svg" : "trifork_logo_white.svg";
   return (
     <div className={cn("navbar", {"navbar--transparent": props.transparent})}>
       <div className="navbar__content">
@@ -15,12 +15,18 @@ export default (props) => {
         </a>
 
         <div className="navbar__menu">
-          { Menu.main.map(item => (
-            <a key={item.title} className="navbar__menu-item" href={item.href}>
+          { Menu.main.map(item => (item.items &&
+            <button key={item.title} className="navbar__menu-item" href={item.href}>
               {item.title}
               <MenuDropDown items={item.items} />
-            </a>
-          ))}
+            </button>
+            ) || (
+                <a key={item.title} className="navbar__menu-item" href={item.href}>
+                    {item.title}
+                    <MenuDropDown items={item.items} />
+                </a>)
+            )
+          }
         </div>
       </div>
     </div>

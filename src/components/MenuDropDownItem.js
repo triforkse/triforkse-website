@@ -4,7 +4,7 @@ import './MenuDropDown.css';
 
 export default (props) => {
   return (
-    <div className="menu-dd__item">
+    <a className="menu-dd__item" href={props.href}>
       <div className="menu-dd__item-inner">
         <div className="menu-dd__icon">
           <span className="icon" data-color={props.color} style={{color: props.color}}>{props.icon}</span>
@@ -13,12 +13,12 @@ export default (props) => {
           {props.title}
         </div>
         <div className="menu-dd__item-text">
-          This is a description.
+          {props.description}
         </div>
         <div className="menu-dd__item-learn">
           Learn More <span className="icon">arrow_forward</span>
         </div>
       </div>
-    </div>
+    </a>
   );
 };

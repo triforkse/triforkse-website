@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Icon  from 'react-fontawesome';
 import Navbar from '../Navbar';
 import PageFooter from '../PageFooter';
 import './TeamPage.css';
@@ -90,7 +89,7 @@ export default class TeamPage extends Component {
           <div className="trifork-container">
             <div className="row">
               <div className="col-xs-12 col-md-6">
-                
+
                 <h1 className="segment__title">Interested in working at Trifork?</h1>
                 <div className="segment__content">
                   <p className="description">

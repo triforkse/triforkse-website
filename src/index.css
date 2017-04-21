@@ -223,3 +223,84 @@ body, #root, #root > div {
   width: 100%;
 }
 }
+
+.page__splash {
+  height: 600px;
+}
+
+.page__splash-content {
+  width: 1100px;
+  max-width: 90%;
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.page__splash-content--title {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page__splash-title {
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.page__splash-tagline {
+  margin-bottom: 150px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page__splash-hexagon {
+  margin-bottom: 34px;
+}
+
+#accelerateLogo {
+  width: 800px;
+}
+
+.page__splash--1,
+.page__splash--2 {
+  position: relative;
+}
+
+.page__splash--1::before {
+  content: '';
+  position: absolute;
+  background-image: url(./images/splash/workshop.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  x: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.page__splash--2::before {
+  content: '';
+  position: absolute;
+  background-image: url(./images/splash/training.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  x: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.page__splash-content {
+  z-index: 2;
+  position: relative;
+}

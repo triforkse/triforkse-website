@@ -1,0 +1,18 @@
+.contact-form {
+  max-width: 714px;
+  margin: 0 auto;
+}
+
+.contact-form__container {
+  max-width: 900px;
+  margin: 80px auto;
+}
+
+.contact-form__button {
+  margin-top: 30px !important;
+}
+
+.contact-form__row {
+  display: flex;
+  justify-content: space-between;
+}

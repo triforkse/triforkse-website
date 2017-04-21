@@ -62,7 +62,7 @@ export default class BlogPage extends Component {
     return (
       <div>
         <div className="blog-page__header">
-          <img className="blog-page__logo" src={require('../images/logos/trifork_logo_blog.svg')} />
+          <a href="/blog"><img className="blog-page__logo" alt="Trifork" src={require('../images/logos/trifork_logo_blog.svg')} /></a>
           <div className="blog-page__advert">
             <div className="blog-page__advert-text">
               We focus on technology and knowledge sharing

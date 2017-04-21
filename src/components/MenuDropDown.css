@@ -1,6 +1,8 @@
 .menu-dd {
   position: absolute;
   left: 0;
+  padding-top: 10px;
+  margin-top: -10px;
 }
 
 .menu-dd__window {
@@ -18,6 +20,8 @@
   height: 160px;
   padding: 40px 0;
   display: inline-flex;
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu-dd__item-inner {
@@ -28,8 +32,8 @@
   justify-content: center;
 }
 
-.menu-dd__item:nth-child(odd) .menu-dd__item-inner {
-  border-right: solid 1px #E0E6EC;
+.menu-dd__item:nth-child(even) .menu-dd__item-inner {
+  border-left: solid 1px #E0E6EC;
 }
 
 .menu-dd__item:nth-child(3),
