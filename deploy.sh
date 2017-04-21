@@ -1,5 +1,8 @@
 #!/bin/sh
 
+set -e
+
+yarn run build
 git commit -am "Save local changes"
 git checkout -B gh-pages
 git add -f build
