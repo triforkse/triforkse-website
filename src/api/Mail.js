@@ -1,4 +1,3 @@
-var mailgun = require('mailgun.js');
 var mg = {};
 
 export default {
