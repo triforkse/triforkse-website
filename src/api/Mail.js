@@ -1,5 +1,5 @@
 var mailgun = require('mailgun.js');
-var mg = mailgun.client({username: 'api', key: process.env.MAILGUN_API_KEY || 'key-a1611b421ff3890eb51d8f4d176d5315'});
+var mg = {};
 
 export default {
   send: ({name, email, company, companySize, phone, message }) => {
