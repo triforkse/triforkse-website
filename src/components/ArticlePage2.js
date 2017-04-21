@@ -18,7 +18,7 @@ export default class ArticlePage extends Component {
               We focus on technology and knowledge sharing
             </div>
             <div className="blog-page__advert-button">
-              <a href="/team" className="transparent-button">Find out more</a>
+              <a href="/" className="transparent-button">Find out more</a>
             </div>
           </div>
         </div>

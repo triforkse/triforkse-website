@@ -325,7 +325,7 @@ export default class ContactPage extends Component {
 
               <h2 className="section__title">Looking for a job?</h2>
               <p className="description">
-                Check out our <a href="/team">Team Page</a>.
+                Check out our <a href="/careers">Team Page</a>.
               </p>
             </div>
           </div>

@@ -17,7 +17,7 @@ import './lib/flexboxgrid.min.css';
 const router = (
   <Router history={browserHistory}>
     <Route path="/" component={HomePage} />
-    <Route path="team" component={TeamPage} />
+    <Route path="careers" component={TeamPage} />
     <Route path="contact" component={ContactPage} />
     <Route path="accelerate" component={AcceleratePage} />
     <Route path="consulting" component={ServiceItConsulting} />

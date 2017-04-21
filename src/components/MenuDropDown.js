@@ -4,7 +4,6 @@ import MenuDropDownItem from './MenuDropDownItem';
 import './MenuDropDown.css';
 
 export default (props) => {
-  console.log(props)
   return (
     <div className="menu-dd">
       <div className="menu-dd__window">

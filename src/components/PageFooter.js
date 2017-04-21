@@ -4,7 +4,7 @@ export default (props) => {
   const menus = [
     [["Home", "/"],
      ["Office", "/office"],
-     ["Team", "/team"],
+     ["Team", "/careers"],
      ["Meetups", "/meetups"],
      ["GOTO Conference", "https://gotocon.com/"]],
 

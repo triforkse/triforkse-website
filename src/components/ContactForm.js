@@ -39,7 +39,6 @@ export default class ContactForm extends React.Component {
 
   render() {
     return (<div className="contact-form">
-      <h1>{this.state.state}</h1>
       <div className="contact-form__container">
         <div className="contact-form__row">
           <InputField name="Your Full Name" required ref={(input) => { this.name = input; }} />
