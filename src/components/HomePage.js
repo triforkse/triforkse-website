@@ -32,8 +32,8 @@ export default class HomePage extends Component {
                   <img className="homepage-title__icon" style={{width: 180}} alt="" src={require("../images/splash/Hexagons.svg")} />
                   <h1 className="homepage-title__title">Driving Digital Transformation</h1>
                   <div className="homepage-title__description">
-                    Trifork helps companies develop new products,
-                    and existing data to drive new business.
+                    Trifork helps companies develop new IT products,
+                    and use their data to create new business.
                   </div>
                   <a href="/consulting" className="splash__call-to-action splash__call-to-action--full">Read More About our Services</a>
                 </div>
