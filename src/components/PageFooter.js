@@ -11,10 +11,7 @@ export default (props) => {
      ["Accelerate", "/accelerate"]],
 
     [["Blog", "/blog"],
-     ["Careers", "/careers"]],
-     ["Blog", "/blog"],
-     ["Contact Us", "/contact"]
-  ];
+     ["Careers", "/careers"]]];
 
   return (
     <div className="page-footer">
@@ -32,18 +29,9 @@ export default (props) => {
           <p>
             Trifork AB. Ferkens Gränd 3,<br/>
             Stockholm, 11 130, Sweden.<br/>
-            070 445 0863, stockholm@trifork.com
+            stockholm@trifork.com
           </p>
 
-          <p>
-            Trifork is a Bacs approved bureau and is regulated by the
-            Financial Conduct Authority as an Authorised Payment Institution.
-          </p>
-
-          <p>
-            By continuing your visit to this site,
-            you agree to the use of cookies. <a href="/privacy">Learn more</a>.
-          </p>
         </div>
       </div>
     </div>

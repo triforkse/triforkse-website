@@ -5,6 +5,8 @@ import HomePage from './components/HomePage';
 import TeamPage from './components/TeamPage/TeamPage';
 import ContactPage from './components/ContactPage';
 import BlogPage from './components/BlogPage';
+import CourseListPage from './components/CourseListPage';
+import CoursePage from './components/CoursePage';
 import BlogArticle from './components/BlogArticle';
 import AcceleratePage from './components/AcceleratePage2';
 import ServiceItConsulting from './components/ServiceItConsulting';
@@ -24,6 +26,8 @@ const router = (
     <Route path="training" component={TrainingPage} />
     <Route path="blog/posts/:slug" component={BlogArticle} />
     <Route path="blog(/:category)" component={BlogPage} />
+    <Route path="courses" component={CourseListPage} />
+    <Route path="courses/:slug" component={CoursePage} />
     <Route path="our-work/mobilepay" component={MobilePayArticle} />
     <Route path="*" component={NotFoundPage}/>
   </Router>
