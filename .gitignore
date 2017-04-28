@@ -14,3 +14,7 @@ build
 .env
 .vscode
 npm-debug.log
+
+terraform.tfvars
+terraform.tfstate
+terraform.tfstate.backup
