@@ -3,21 +3,17 @@ import React from 'react';
 export default (props) => {
   const menus = [
     [["Home", "/"],
-     ["Office", "/office"],
-     ["Team", "/careers"],
-     ["Meetups", "/meetups"],
-     ["GOTO Conference", "https://gotocon.com/"]],
+     ["GOTO Conference", "https://gotosthlm.com/"],
+     ["Tech Meetups", "https://www.meetup.com/gotosthlm/"]],
 
-    [["Product Development", "/product-development"],
+    [["Services", "/services"],
      ["Training", "/training"],
-     ["Secure Device Grid", "/products/secure-device-grid"],
-     ["Humio", "/products/humio"],
-     ["Support", "/products/support"]],
+     ["Accelerate", "/accelerate"]],
 
-    [["Legal", "/legal"],
+    [["Blog", "/blog"],
+     ["Careers", "/careers"]],
      ["Blog", "/blog"],
-     ["About us", "/about-us"],
-     ["Jobs", "jobs"]]
+     ["Contact Us", "/contact"]
   ];
 
   return (
